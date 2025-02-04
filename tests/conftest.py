@@ -12,7 +12,7 @@ def browser():
     # Initialize the ChromeDriver instance
     driver = selenium.webdriver.Chrome()
 
-    # Make its calls wait for elements to appear
+    # Make its calls wait (10 secs) for elements to appear
     driver.implicitly_wait(10)
 
     # Return the WebDriver instance for the setup
@@ -20,4 +20,3 @@ def browser():
 
     # Quit the WebDriver instance for the cleanup
     driver.quit()
-    
