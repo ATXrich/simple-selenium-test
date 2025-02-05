@@ -37,7 +37,7 @@ def browser(config):
     else:
         raise Exception(f'Browser "{config["browser"]}" is not supported')
         
-    # Make its calls wait (10 secs) for elements to appear
+    # Make its calls wait for elements to appear
     driver.implicitly_wait(config['implicit_wait'])
 
     # Return the WebDriver instance for the setup
